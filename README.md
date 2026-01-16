@@ -17,8 +17,10 @@ data-science-student-performance/
 │  │  └─ .gitkeep
 │  └─ README_data.md
 ├─ code/
-│  └─ .keep
+│  ├─ 00_setup.R
+│  ├─ 01_import_check.R
+│  └─ .gitkeep
 ├─ outputs/
-│  └─ .keep
+│  ├─ tables/
 └─ report/
-   └─ .keep
+   └─ .gitkeep
