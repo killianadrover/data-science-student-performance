@@ -1,0 +1,16 @@
+# R / RStudio
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.Rproj.user/
+
+# renv
+renv/library/
+renv/python/
+renv/staging/
+
+# Data
+data/raw/*
+data/processed/*
+!data/README_data.md
