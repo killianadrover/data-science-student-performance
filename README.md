@@ -7,16 +7,18 @@
 data-science-student-performance/
 ├─ README.md
 ├─ .gitignore
-├─ renv.lock                  
-├─ renv/                     
-│
+├─ renv.lock
+├─ renv/
+│  └─ .keep
 ├─ data/
-│  ├─ raw/                   
-│  ├─ processed/             
-│  └─ README_data.md         
-│
-├─ code/           
-│
+│  ├─ raw/
+│  │  └─ .gitkeep
+│  ├─ processed/
+│  │  └─ .gitkeep
+│  └─ README_data.md
+├─ code/
+│  └─ .keep
 ├─ outputs/
-│
+│  └─ .keep
 └─ report/
+   └─ .keep
