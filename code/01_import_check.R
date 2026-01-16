@@ -24,3 +24,5 @@ dir.create("outputs/tables", recursive = TRUE, showWarnings = FALSE)
 write.csv(head(df, 10), "outputs/tables/first_10_rows.csv", row.names = FALSE)
 
 cat("\nSaved: outputs/tables/first_10_rows.csv\n")
+
+nrow(df)
