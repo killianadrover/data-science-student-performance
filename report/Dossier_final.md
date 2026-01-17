@@ -22,7 +22,7 @@ Les résultats obtenus montrent que les compétences en lecture et en écriture 
 
 ---
 
-## 2. Literature summary and hypotheses
+## 2. Hypothèses et articles
 
 De nombreux travaux en économie de l’éducation analysent les déterminants des performances scolaires des élèves, en mettant l’accent sur le rôle de l’environnement familial, des compétences académiques et du contexte socio-économique. Cette section présente trois articles de référence traitant de problématiques proches de celle étudiée dans ce travail.
 
