@@ -25,4 +25,32 @@ write.csv(head(df, 10), "outputs/tables/first_10_rows.csv", row.names = FALSE)
 
 cat("\nSaved: outputs/tables/first_10_rows.csv\n")
 
-nrow(df)
+# ------------------------------------------------------------
+# Clean dataset for analysis (keep only variables used)
+# ------------------------------------------------------------
+
+df_clean <- df %>%
+  rename(
+    parental_level_of_education = `parental level of education`,
+    test_preparation_course = `test preparation course`,
+    math_score = `math score`,
+    reading_score = `reading score`,
+    writing_score = `writing score`
+  ) %>%
+  select(
+    math_score,
+    reading_score,
+    writing_score,
+    parental_level_of_education,
+    lunch,
+    test_preparation_course
+  ) %>%
+  mutate(
+    parental_level_of_education = as.factor(parental_level_of_education),
+    lunch = as.factor(lunch),
+    test_preparation_course = as.factor(test_preparation_course)
+  )
+
+# Save cleaned dataset
+saveRDS(df_clean, file.path(PATH_PROCESSED, "students_clean.rds"))
+cat("Saved:", file.path(PATH_PROCESSED, "students_clean.rds"), "\n")

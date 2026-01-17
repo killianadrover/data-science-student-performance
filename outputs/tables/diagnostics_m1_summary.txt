@@ -1,0 +1,58 @@
+=== Model 1 summary ===
+
+Call:
+lm(formula = math_score ~ reading_score + writing_score + parental_level_of_education + 
+    lunch + test_preparation_course, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-23.9895  -5.6876  -0.2497   5.9913  23.5489 
+
+Coefficients:
+                                             Estimate Std. Error t value
+(Intercept)                                   6.96854    1.42775   4.881
+reading_score                                 0.59606    0.06270   9.507
+writing_score                                 0.22292    0.06294   3.542
+parental_level_of_educationbachelor's degree -0.35284    0.95290  -0.370
+parental_level_of_educationhigh school       -0.39420    0.82742  -0.476
+parental_level_of_educationmaster's degree   -1.79206    1.22731  -1.460
+parental_level_of_educationsome college       0.34489    0.78659   0.438
+parental_level_of_educationsome high school  -0.87014    0.84520  -1.030
+lunchstandard                                 5.16632    0.57363   9.006
+test_preparation_coursecompleted             -0.86388    0.59952  -1.441
+                                             Pr(>|t|)    
+(Intercept)                                  1.23e-06 ***
+reading_score                                 < 2e-16 ***
+writing_score                                0.000416 ***
+parental_level_of_educationbachelor's degree 0.711256    
+parental_level_of_educationhigh school       0.633882    
+parental_level_of_educationmaster's degree   0.144568    
+parental_level_of_educationsome college      0.661148    
+parental_level_of_educationsome high school  0.303495    
+lunchstandard                                 < 2e-16 ***
+test_preparation_coursecompleted             0.149914    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.314 on 990 degrees of freedom
+Multiple R-squared:  0.7021,	Adjusted R-squared:  0.6994 
+F-statistic: 259.2 on 9 and 990 DF,  p-value: < 2.2e-16
+
+
+=== Model comparison (m1 vs m1_quad) ===
+Analysis of Variance Table
+
+Model 1: math_score ~ reading_score + writing_score + parental_level_of_education + 
+    lunch + test_preparation_course
+Model 2: math_score ~ reading_score + I(reading_score^2) + writing_score + 
+    I(writing_score^2) + parental_level_of_education + lunch + 
+    test_preparation_course
+  Res.Df   RSS Df Sum of Sq      F  Pr(>F)  
+1    990 68427                              
+2    988 67881  2    546.14 3.9745 0.01909 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+=== Cook's distance threshold ===
+threshold = 0.004 
+influential points (Cook's D > threshold): 41 

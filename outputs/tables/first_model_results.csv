@@ -1,0 +1,11 @@
+term,estimate,std.error,statistic,p.value
+(Intercept),6.9685,1.4277,4.8808,0
+reading_score,0.5961,0.0627,9.5066,0
+writing_score,0.2229,0.0629,3.5416,4e-4
+parental_level_of_educationbachelor's degree,-0.3528,0.9529,-0.3703,0.7113
+parental_level_of_educationhigh school,-0.3942,0.8274,-0.4764,0.6339
+parental_level_of_educationmaster's degree,-1.7921,1.2273,-1.4601,0.1446
+parental_level_of_educationsome college,0.3449,0.7866,0.4385,0.6611
+parental_level_of_educationsome high school,-0.8701,0.8452,-1.0295,0.3035
+lunchstandard,5.1663,0.5736,9.0064,0
+test_preparation_coursecompleted,-0.8639,0.5995,-1.441,0.1499
