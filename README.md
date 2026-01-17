@@ -60,8 +60,6 @@ data-science-student-performance/
 ├── report/                        # Rapports et documentation
 │   ├── Dossier_etape_1.pdf       # Rapport étape 1
 │   ├── Dossier_final.md          # Rapport final (Markdown)
-│   └── outputs/                   # Sorties du rapport
-│       └── figures/               # Figures du rapport
 │
 ├── renv/                          # Environnement R reproductible
 │   ├── activate.R                # Script d'activation
@@ -84,7 +82,6 @@ data-science-student-performance/
 │
 ├── README.md                      # Documentation principale du projet
 ├── renv.lock                      # Verrouillage des versions des packages R
-└── ARBORESCENCE.md               # Ce fichier (arborescence du projet)
 ```
 
 ## Description des répertoires principaux
